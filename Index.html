@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación Digital - Juan Zárate</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            background-image:
+                radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.5) 0%, rgba(255,255,255,0) 30%),
+                radial-gradient(circle at 0% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(255,255,255,0) 30%);
+        }
+
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(145deg, #e7c66c, #c9a043, #ad853d);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15), 
+                        inset 0 1px 1px rgba(255, 235, 179, 0.8);
+        }
+        
+        .button-3d:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-shadow {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .name-color {
+            color: #b48521;
+        }
+        
+        .icon-bg {
+            background: linear-gradient(145deg, #fde488, #d1a337);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2),
+                        inset 0 1px 1px rgba(255,255,255,0.7),
+                        inset 0 -1px 1px rgba(0,0,0,0.2);
+        }
+        
+        .icon-color {
+            color: #8c6422;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .social-icon:hover {
+            color: #b48521;
+        }
+        
+        .install-tab-active {
+            border-bottom-width: 2px;
+            --tw-border-opacity: 1;
+            border-color: rgb(180 133 33 / var(--tw-border-opacity));
+            color: rgb(180 133 33 / var(--tw-border-opacity));
+        }
+
+        .course-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .course-details.open {
+            max-height: 500px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen sm:p-4">
+
+    <div class="w-full sm:max-w-sm mx-auto bg-white rounded-none sm:rounded-3xl overflow-hidden relative shadow-2xl">
+        
+        <a href="#" id="installButton" title="Instalar en mi dispositivo" class="absolute top-4 left-4 z-20 w-12 h-12 bg-black/20 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center text-white social-icon transition-colors duration-300" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+            <i class="fas fa-mobile-screen-button text-2xl"></i>
+        </a>
+
+        <a href="tel:+5493586012008" title="Llamar" class="absolute top-4 right-4 z-20 w-12 h-12 bg-black/20 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center text-white social-icon transition-colors duration-300" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+            <i class="fas fa-phone-alt text-2xl"></i>
+        </a>
+
+        <div class="relative text-center pb-8 bg-white">
+            <div class="absolute top-0 left-0 w-full h-[460px]">
+                <img src="https://i.postimg.cc/L60XY9n8/FOTO-JUAN-RETRATO.jpg" 
+                     alt="Foto de perfil de Juan Zárate" 
+                     class="w-full h-full object-cover object-top">
+                <div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-white to-transparent"></div>
+            </div>
+            
+            <div class="relative z-10 pt-[420px]">
+                <div class="mt-4 relative z-10">
+                    <h1 class="font-playfair text-4xl tracking-widest uppercase name-color">
+                        <span class="font-light">Juan</span> <span class="font-bold">Zárate</span>
+                    </h1>
+                    <p class="text-sm tracking-[0.2em] text-gray-400 mt-2">COACH TRANSPERSONAL</p>
+                </div>
+
+                <div class="mt-8 relative z-10">
+                    <h2 class="text-2xl font-light text-gray-700">¡Bienvenida(o)!</h2>
+                    <p class="text-xs text-gray-400 mt-1 tracking-wider">TOCA LOS ICONOS PARA INTERACTUAR</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 pt-4 space-y-5 bg-white rounded-b-3xl">
+            
+            <a href="https://wa.me/5493586012008" target="_blank" class="relative flex items-center h-14 rounded-full gold-gradient button-3d group transition-transform duration-150 ease-in-out">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center icon-bg">
+                    <i class="fab fa-whatsapp text-4xl icon-color group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="w-full pl-16 text-center text-white text-lg font-medium uppercase tracking-wider text-shadow">Escríbeme al WhatsApp</span>
+            </a>
+
+            <a href="#" id="scheduleButton" class="relative flex items-center h-14 rounded-full gold-gradient button-3d group transition-transform duration-150 ease-in-out">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center icon-bg">
+                    <i class="fas fa-clock text-3xl icon-color group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="w-full pl-12 text-center text-white text-lg font-medium uppercase tracking-wider text-shadow">Horario de atención</span>
+            </a>
+            
+            <a href="#" id="coursesButton" class="relative flex items-center h-14 rounded-full gold-gradient button-3d group transition-transform duration-150 ease-in-out">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center icon-bg">
+                    <i class="fas fa-graduation-cap text-3xl icon-color group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="w-full pl-12 text-center text-white text-lg font-medium uppercase tracking-wider text-shadow">Cursos y Talleres</span>
+            </a>
+
+            <a href="#" id="accompanimentButton" class="relative flex items-center h-14 rounded-full gold-gradient button-3d group transition-transform duration-150 ease-in-out">
+                 <div class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center icon-bg">
+                    <i class="fas fa-home text-3xl icon-color group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="w-full pl-12 text-center text-white text-lg font-medium uppercase tracking-wider text-shadow">La Casa Propia</span>
+            </a>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Edmundo+Damicis+92,+R%C3%ADo+Cuarto,+C%C3%B3rdoba,+Argentina" target="_blank" class="relative flex items-center h-14 rounded-full gold-gradient button-3d group transition-transform duration-150 ease-in-out">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center icon-bg">
+                    <i class="fas fa-map-marker-alt text-3xl icon-color group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="w-full pl-12 text-center text-white text-lg font-medium uppercase tracking-wider text-shadow">Ubicación</span>
+            </a>
+
+            <a href="#" id="qrButton" class="relative flex items-center h-14 rounded-full gold-gradient button-3d group transition-transform duration-150 ease-in-out">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center icon-bg">
+                    <i class="fas fa-qrcode text-3xl icon-color group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="w-full pl-12 text-center text-white text-lg font-medium uppercase tracking-wider text-shadow">Compartir QR</span>
+            </a>
+
+            <a href="#" id="saveContactButton" download="juan-zarate.vcf" class="relative flex items-center h-14 rounded-full gold-gradient button-3d group transition-transform duration-150 ease-in-out">
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full flex items-center justify-center icon-bg">
+                    <i class="fas fa-address-card text-3xl icon-color group-hover:scale-110 transition-transform"></i>
+                </div>
+                <span class="w-full pl-12 text-center text-white text-lg font-medium uppercase tracking-wider text-shadow">Guardar Contacto</span>
+            </a>
+
+            <div class="text-center pt-4 border-t border-gray-100 mt-5">
+                <a href="mailto:zaratejr721@gmail.com" class="text-gray-500 hover:name-color transition-colors duration-300 inline-flex items-center space-x-2 text-sm">
+                    <i class="fas fa-envelope"></i>
+                    <span>zaratejr721@gmail.com</span>
+                </a>
+                
+                <div class="mt-4">
+                    <p class="text-xs text-gray-400 mb-2 tracking-wider">SÍGUENOS</p>
+                    <div class="flex justify-center space-x-5">
+                        <a href="https://www.facebook.com/share/1c25xtES6U/" target="_blank" class="text-gray-500 hover:name-color transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/juan.creandorealidades?igsh=emlhYXUyNzk4OQ==" target="_blank" class="text-gray-500 hover:name-color transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@juanzarate5563?_r=1&_t=ZS-96iL2sqdMEE" target="_blank" class="text-gray-500 hover:name-color transition-colors duration-300">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="qrPopup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <div class="bg-[#FFFBF5] rounded-2xl p-8 pt-6 text-center shadow-xl relative max-w-xs w-full transform transition-transform duration-300 scale-95">
+            <button id="closeQrPopup" class="absolute top-2 right-2 text-white bg-[#ad853d] rounded-full h-8 w-8 flex items-center justify-center text-lg hover:bg-[#b48521] focus:outline-none transition-colors">×</button>
+            <h3 class="text-xl font-medium mb-4 font-playfair text-[#8c6422]">Escanea para Compartir</h3>
+            <div id="qrcode" class="flex justify-center p-2 bg-white border border-[#e7c66c] rounded-lg shadow-inner"></div>
+            <p class="text-xs text-gray-500 mt-4">Apunta la cámara de tu teléfono a este código para abrir la tarjeta.</p>
+        </div>
+    </div>
+
+    <div id="accompanimentPopup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <div class="bg-[#FFFBF5] rounded-2xl p-6 shadow-xl relative max-w-sm w-full transform transition-transform duration-300 scale-95 max-h-[90vh] overflow-y-auto">
+            <button id="closeAccompanimentPopup" class="absolute top-2 right-2 text-white bg-[#ad853d] rounded-full h-8 w-8 flex items-center justify-center text-lg hover:bg-[#b48521] focus:outline-none z-20 transition-colors">×</button>
+            
+            <div class="text-center">
+                <h3 class="text-2xl font-semibold mb-1 font-playfair text-[#8c6422]">La Casa Propia</h3>
+                <p class="text-xs text-gray-500 italic mb-4">12 sesiones para dejar de vivir la vida de otro y empezar a vivir la tuya.</p>
+            </div>
+
+            <div class="relative w-full mx-auto overflow-hidden rounded-lg h-44 mb-4">
+                <div id="carousel-slides" class="flex transition-transform duration-500 ease-in-out h-full"></div>
+                <button id="prevBtn" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/30 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/50 transition"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/30 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/50 transition"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="text-xs text-gray-700 space-y-3 text-left leading-relaxed mb-4 border-t pt-3">
+                <p>
+                    Trabajamos el origen de los patrones que te frenan, los traducimos a tu propio lenguaje y los encarnamos en tu vida real — en el trabajo, los vínculos y el cuerpo.
+                </p>
+                <p class="font-medium text-gray-800">
+                    Al terminar sabés quién sos, tomás decisiones desde tu centro y lo que cambia se sostiene.
+                </p>
+                
+                <div class="bg-amber-50 border-l-4 border-[#e7c66c] p-3 rounded-r-md mt-4">
+                    <p class="text-xs font-bold text-[#8c6422] uppercase tracking-wider">El primer paso es gratis</p>
+                    <p class="text-xs text-gray-600 mt-1 leading-normal">
+                        Una llamada de diagnóstico de 60 minutos para ver si este proceso es para vos en este momento.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                 <a href="https://wa.me/5493586012008?text=Hola%20Juan%2C%20me%20gustar%C3%ADa%20agendar%20la%20llamada%20de%20diagn%C3%B3stico%20de%2060%20minutos%20sin%20cargo%20para%20el%20proceso%20La%20Casa%20Propia." target="_blank" class="inline-block w-full text-center py-3 rounded-full gold-gradient text-white uppercase tracking-wider text-shadow font-semibold button-3d text-xs">
+                     Agendá ahora por WhatsApp
+                 </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="coursesPopup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <div class="bg-[#FFFBF5] rounded-2xl p-6 shadow-xl relative max-w-sm w-full transform transition-transform duration-300 scale-95 max-h-[90vh] overflow-y-auto">
+            <button id="closeCoursesPopup" class="absolute top-2 right-2 text-white bg-[#ad853d] rounded-full h-8 w-8 flex items-center justify-center text-lg hover:bg-[#b48521] focus:outline-none z-20 transition-colors">×</button>
+            <div class="text-center">
+                <h3 class="text-2xl font-medium mb-2 font-playfair text-[#8c6422]">Cursos y Talleres</h3>
+                <p class="text-sm text-gray-600 mb-6">Inscribite en nuestros espacios de formación y exploration vivencial.</p>
+            </div>
+            <div class="space-y-4">
+                
+                <div class="bg-white border border-transparent rounded-lg p-3 transition-all duration-300 hover:shadow-md hover:border-[#e7c66c] course-item">
+                    <div class="flex items-center header-container">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=400" alt="Arqueología de tu Linaje" class="w-24 h-32 object-cover rounded-md">
+                        <div class="pl-4 flex-1">
+                            <h4 class="font-semibold text-gray-800 text-sm">Arqueología de tu Linaje</h4>
+                            <p class="text-xs text-gray-500 mt-1">Rastreá los patrones que heredaste y que gobiernan tu vida sin que lo hayas elegido.</p>
+                            <button class="course-info-toggle text-xs font-bold name-color mt-2 inline-block">MÁS INFO →</button>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <ul class="text-xs text-gray-600 text-left space-y-1 mt-3 border-t pt-3">
+                            <li><strong>Duración:</strong> 4 semanas (1 encuentro semanal de 3 hs)</li>
+                            <li><strong>Modalidad:</strong> Presencial (Río Cuarto) o virtual</li>
+                            <li><strong>Precio:</strong> $180.000 ARS</li>
+                            <li><strong>Incluye:</strong> Cuaderno de trabajo, registro somático semanal, cierre con mapa de origen personal.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-transparent rounded-lg p-3 transition-all duration-300 hover:shadow-md hover:border-[#e7c66c] course-item">
+                    <div class="flex items-center header-container">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400" alt="Del Agotamiento a la Presencia" class="w-24 h-32 object-cover rounded-md">
+                        <div class="pl-4 flex-1">
+                            <h4 class="font-semibold text-gray-800 text-sm">Del Agotamiento a la Presencia</h4>
+                            <p class="text-xs text-gray-500 mt-1">Para terapeutas y coaches que dan todo y vuelven a casa vacíos. Aprendé a acompañar sin absorberte.</p>
+                            <button class="course-info-toggle text-xs font-bold name-color mt-2 inline-block">MÁS INFO →</button>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <ul class="text-xs text-gray-600 text-left space-y-1 mt-3 border-t pt-3">
+                            <li><strong>Duración:</strong> 3 encuentros (una vez por semana, 3 hs cada uno)</li>
+                            <li><strong>Modalidad:</strong> Presencial grupal — máximo 12 personas</li>
+                            <li><strong>Precio:</strong> $90.000 ARS</li>
+                            <li><strong>Incluye:</strong> Protocolo personal de regulación pre/post sesión, práctica de Metta guiada, material de referencia rápida.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-transparent rounded-lg p-3 transition-all duration-300 hover:shadow-md hover:border-[#e7c66c] course-item">
+                    <div class="flex items-center header-container">
+                        <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=400" alt="El Cuerpo como Brújula" class="w-24 h-32 object-cover rounded-md">
+                        <div class="pl-4 flex-1">
+                            <h4 class="font-semibold text-gray-800 text-sm">El Cuerpo como Brújula</h4>
+                            <p class="text-xs text-gray-500 mt-1">Tu sistema nervioso sabe cosas que tu mente todavía no procesó. Aprendé a leerlo.</p>
+                            <button class="course-info-toggle text-xs font-bold name-color mt-2 inline-block">MÁS INFO →</button>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <ul class="text-xs text-gray-600 text-left space-y-1 mt-3 border-t pt-3">
+                            <li><strong>Duración:</strong> 2 días intensivos (sábado y domingo, 9 a 18 hs)</li>
+                            <li><strong>Modalidad:</strong> Presencial — Río Cuarto</li>
+                            <li><strong>Precio:</strong> $220.000 ARS</li>
+                            <li><strong>Incluye:</strong> Mapa personal de estados del sistema nervioso, kit de autorregulación, protocolo somático diario.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-transparent rounded-lg p-3 transition-all duration-300 hover:shadow-md hover:border-[#e7c66c] course-item">
+                    <div class="flex items-center header-container">
+                        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=400" alt="Liderazgo desde el Centro" class="w-24 h-32 object-cover rounded-md">
+                        <div class="pl-4 flex-1">
+                            <h4 class="font-semibold text-gray-800 text-sm">Liderazgo desde el Centro</h4>
+                            <p class="text-xs text-gray-500 mt-1">Para profesionales que lideran hacia afuera pero sienten que algo se desarmó adentro. Liderá desde quien sos.</p>
+                            <button class="course-info-toggle text-xs font-bold name-color mt-2 inline-block">MÁS INFO →</button>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <ul class="text-xs text-gray-600 text-left space-y-1 mt-3 border-t pt-3">
+                            <li><strong>Duración:</strong> 6 semanas (1 encuentro semanal de 2 hs)</li>
+                            <li><strong>Modalidad:</strong> Virtual — grupos de hasta 8 personas</li>
+                            <li><strong>Precio:</strong> $250.000 ARS</li>
+                            <li><strong>Incluye:</strong> Diagnóstico de identidades en tensión, diseño del Tercer Espacio propio, sesión individual de cierre.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-transparent rounded-lg p-3 transition-all duration-300 hover:shadow-md hover:border-[#e7c66c] course-item">
+                    <div class="flex items-center header-container">
+                        <img src="https://images.unsplash.com/photo-1484981138541-3d074aa97716?q=80&w=400" alt="Sostener sin Perderse" class="w-24 h-32 object-cover rounded-md">
+                        <div class="pl-4 flex-1">
+                            <h4 class="font-semibold text-gray-800 text-sm">Sostener sin Perderse</h4>
+                            <p class="text-xs text-gray-500 mt-1">Para padres, madres y cuidadores que se borraron para que otros pudieran estar.</p>
+                            <button class="course-info-toggle text-xs font-bold name-color mt-2 inline-block">MÁS INFO →</button>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <ul class="text-xs text-gray-600 text-left space-y-1 mt-3 border-t pt-3">
+                            <li><strong>Duración:</strong> 4 semanas (1 encuentro semanal de 2.5 hs)</li>
+                            <li><strong>Modalidad:</strong> Presencial grupal — máximo 10 personas</li>
+                            <li><strong>Precio:</strong> $150.000 ARS</li>
+                            <li><strong>Incluye:</strong> Tarjetas de identidades para uso en casa, práctica de díada con familiar de confianza, guía de encarnación semanal.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-transparent rounded-lg p-3 transition-all duration-300 hover:shadow-md hover:border-[#e7c66c] course-item">
+                    <div class="flex items-center header-container">
+                        <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=400" alt="La Voz Propia" class="w-24 h-32 object-cover rounded-md">
+                        <div class="pl-4 flex-1">
+                            <h4 class="font-semibold text-gray-800 text-sm">La Voz Propia</h4>
+                            <p class="text-xs text-gray-500 mt-1">Para quienes se acostumbraron a decir sí antes de saber si quieren. Recuperá lo que se achicó.</p>
+                            <button class="course-info-toggle text-xs font-bold name-color mt-2 inline-block">MÁS INFO →</button>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <ul class="text-xs text-gray-600 text-left space-y-1 mt-3 border-t pt-3">
+                            <li><strong>Duración:</strong> 5 semanas (1 encuentro semanal de 2.5 hs)</li>
+                            <li><strong>Modalidad:</strong> Presencial o virtual — grupos de hasta 8 personas</li>
+                            <li><strong>Precio:</strong> $180.000 ARS</li>
+                            <li><strong>Incluye:</strong> Registro diario de adaptaciones automáticas, ejercicios de ocupación de espacio, narrativa escrita.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-transparent rounded-lg p-3 transition-all duration-300 hover:shadow-md hover:border-[#e7c66c] course-item">
+                    <div class="flex items-center header-container">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=400" alt="El Discernimiento Encarnado" class="w-24 h-32 object-cover rounded-md">
+                        <div class="pl-4 flex-1">
+                            <h4 class="font-semibold text-gray-800 text-sm">El Discernimiento Encarnado</h4>
+                            <p class="text-xs text-gray-500 mt-1">Tomás de Aquino e Ignacio de Loyola bajados al cuerpo. Tomá decisiones desde adentro.</p>
+                            <button class="course-info-toggle text-xs font-bold name-color mt-2 inline-block">MÁS INFO →</button>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <ul class="text-xs text-gray-600 text-left space-y-1 mt-3 border-t pt-3">
+                            <li><strong>Duración:</strong> 1 jornada intensiva (8 hs) + 2 sesiones de seguimiento</li>
+                            <li><strong>Modalidad:</strong> Presencial — Río Cuarto</li>
+                            <li><strong>Precio:</strong> $200.000 ARS</li>
+                            <li><strong>Incluye:</strong> Brújula de consolación/desolación somática, protocolo de discernimiento complejo, acompañamiento por WhatsApp un mes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="installPopup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <div class="bg-[#FFFBF5] rounded-2xl p-6 shadow-xl relative max-w-sm w-full transform transition-transform duration-300 scale-95 max-h-[90vh] overflow-y-auto">
+            <button id="closeInstallPopup" class="absolute top-2 right-2 text-white bg-[#ad853d] rounded-full h-8 w-8 flex items-center justify-center text-lg hover:bg-[#b48521] focus:outline-none z-20 transition-colors">×</button>
+            <div class="text-center">
+                 <h3 class="text-2xl font-medium mb-2 font-playfair text-[#8c6422]">¿Cómo instalar en mi dispositivo?</h3>
+                <p class="text-sm text-gray-600 mb-4">Accede a mi tarjeta fácilmente desde tu pantalla de inicio.</p>
+            </div>
+
+            <div class="flex border-b mb-4">
+                <button id="iosTab" class="flex-1 p-2 font-semibold install-tab-active flex items-center justify-center gap-2">
+                    <i class="fab fa-apple"></i> iOS
+                </button>
+                <button id="androidTab" class="flex-1 p-2 font-semibold text-gray-400 flex items-center justify-center gap-2">
+                     <i class="fab fa-android"></i> Android
+                </button>
+            </div>
+
+            <div id="iosInstructions">
+                <ol class="list-decimal list-inside space-y-3 text-left text-sm text-gray-700">
+                    <li>Abre esta página en <strong>Safari</strong>.</li>
+                    <li>Toca el icono de <strong>Compartir</strong> <i class="fas fa-share-square name-color"></i> en la barra de navegación.</li>
+                    <li>Desliza hacia arriba y selecciona <strong>"Añadir a la pantalla de inicio"</strong> <i class="fas fa-plus-square name-color"></i>.</li>
+                    <li>Confirma el nombre y toca <strong>"Añadir"</strong>.</li>
+                </ol>
+            </div>
+
+            <div id="androidInstructions" class="hidden">
+                 <ol class="list-decimal list-inside space-y-3 text-left text-sm text-gray-700">
+                    <li>Abre esta página en <strong>Chrome</strong>.</li>
+                    <li>Toca los <strong>tres puntos</strong> <i class="fas fa-ellipsis-v name-color"></i> en la esquina superior derecha.</li>
+                    <li>Selecciona <strong>"Añadir a pantalla de inicio"</strong> o <strong>"Instalar aplicación"</strong>.</li>
+                    <li>Confirma y pulsa <strong>"Añadir"</strong>.</li>
+                </ol>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="schedulePopup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <div class="bg-[#FFFBF5] rounded-2xl p-6 shadow-xl relative max-w-sm w-full transform transition-transform duration-300 scale-95">
+            <button id="closeSchedulePopup" class="absolute top-2 right-2 text-white bg-[#ad853d] rounded-full h-8 w-8 flex items-center justify-center text-lg hover:bg-[#b48521] focus:outline-none z-20 transition-colors">×</button>
+            <div class="text-center">
+                <h3 class="text-2xl font-medium mb-4 font-playfair text-[#8c6422]">Nuestro Horario</h3>
+            </div>
+            <div class="text-left text-gray-700 space-y-2">
+                <div class="flex justify-between border-b pb-2">
+                    <span class="font-semibold">Lunes a Viernes</span>
+                    <span>9:00 AM - 7:00 PM</span>
+                </div>
+                <div class="flex justify-between border-b pb-2">
+                    <span class="font-semibold">Sábados</span>
+                    <span>9:00 AM - 12:00 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="font-semibold">Domingos</span>
+                    <span>Cerrado</span>
+                </div>
+            </div>
+             <p class="text-xs text-gray-500 mt-4 text-center">Horario sujeto a cambios. Se recomienda agendar cita previa.</p>
+        </div>
+    </div>
+
+
+    <script>
+        // --- Lógica para el Popup de QR ---
+        const qrButton = document.getElementById('qrButton');
+        const qrPopup = document.getElementById('qrPopup');
+        const closeQrPopup = document.getElementById('closeQrPopup');
+        const qrcodeContainer = document.getElementById('qrcode');
+        const qrPopupContent = qrPopup.querySelector('div');
+
+        const pageUrl = encodeURIComponent(window.location.href);
+        const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${pageUrl}&bgcolor=ffffff&color=000000&qzone=1`;
+        const qrImage = document.createElement('img');
+        qrImage.src = qrImageUrl;
+        qrImage.alt = 'Código QR';
+        qrImage.className = 'rounded-md';
+        qrcodeContainer.appendChild(qrImage);
+
+        const showQrPopup = () => {
+            qrPopup.classList.remove('hidden');
+            setTimeout(() => {
+                qrPopup.style.opacity = '1';
+                qrPopupContent.style.transform = 'scale(1)';
+            }, 10);
+        };
+        const hideQrPopup = () => {
+            qrPopup.style.opacity = '0';
+            qrPopupContent.style.transform = 'scale(0.95)';
+            setTimeout(() => { qrPopup.classList.add('hidden'); }, 300);
+        };
+        qrButton.addEventListener('click', (e) => { e.preventDefault(); showQrPopup(); });
+        closeQrPopup.addEventListener('click', hideQrPopup);
+        qrPopup.addEventListener('click', (e) => { if (e.target === qrPopup) { hideQrPopup(); } });
+
+        // --- Lógica para el Popup de La Casa Propia y Carrusel ---
+        const accompanimentButton = document.getElementById('accompanimentButton');
+        const accompanimentPopup = document.getElementById('accompanimentPopup');
+        const closeAccompanimentPopup = document.getElementById('closeAccompanimentPopup');
+        const carouselSlides = document.getElementById('carousel-slides');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        const images = [
+            'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600',
+            'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600',
+            'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600'
+        ];
+
+        let currentIndex = 1;
+        let slideInterval;
+
+        const setupCarousel = () => {
+            const slides = [images[images.length - 1], ...images, images[0]];
+            carouselSlides.innerHTML = slides.map(src => `
+                <div class="w-full flex-shrink-0 h-full bg-white flex items-center justify-center p-2">
+                    <img src="${src}" class="max-w-full max-h-full object-contain rounded-md" alt="Conversación de acompañamiento">
+                </div>
+            `).join('');
+            updateCarousel(false);
+        };
+
+        const updateCarousel = (withTransition = true) => {
+            carouselSlides.style.transition = withTransition ? 'transform 0.5s ease-in-out' : 'none';
+            carouselSlides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        };
+        
+        const moveToNextSlide = () => {
+            if (currentIndex >= images.length + 1) return;
+            currentIndex++;
+            updateCarousel();
+        };
+
+        const moveToPrevSlide = () => {
+            if (currentIndex <= 0) return;
+            currentIndex--;
+            updateCarousel();
+        };
+
+        const startAutoSlide = () => {
+            stopAutoSlide();
+            slideInterval = setInterval(moveToNextSlide, 4000);
+        };
+
+        const stopAutoSlide = () => {
+            clearInterval(slideInterval);
+        };
+
+        carouselSlides.addEventListener('transitionend', () => {
+            if (currentIndex === 0) {
+                currentIndex = images.length;
+                updateCarousel(false);
+            } else if (currentIndex === images.length + 1) {
+                currentIndex = 1;
+                updateCarousel(false);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            moveToNextSlide();
+            startAutoSlide();
+        });
+        prevBtn.addEventListener('click', () => {
+            moveToPrevSlide();
+            startAutoSlide();
+        });
+
+        const showAccompanimentPopup = () => {
+            accompanimentPopup.classList.remove('hidden');
+            setTimeout(() => {
+                accompanimentPopup.style.opacity = '1';
+                accompanimentPopup.querySelector('div').style.transform = 'scale(1)';
+            }, 10);
+            startAutoSlide();
+        };
+        const hideAccompanimentPopup = () => {
+            accompanimentPopup.style.opacity = '0';
+            accompanimentPopup.querySelector('div').style.transform = 'scale(0.95)';
+            setTimeout(() => { accompanimentPopup.classList.add('hidden'); }, 300);
+            stopAutoSlide();
+        };
+        
+        accompanimentButton.addEventListener('click', (e) => { e.preventDefault(); showAccompanimentPopup(); });
+        closeAccompanimentPopup.addEventListener('click', hideAccompanimentPopup);
+        accompanimentPopup.addEventListener('click', (e) => { if (e.target === accompanimentPopup) { hideAccompanimentPopup(); } });
+        
+        // --- Lógica para el Popup de Cursos ---
+        const coursesButton = document.getElementById('coursesButton');
+        const coursesPopup = document.getElementById('coursesPopup');
+        const closeCoursesPopup = document.getElementById('closeCoursesPopup');
+
+        const showCoursesPopup = () => {
+            coursesPopup.classList.remove('hidden');
+            setTimeout(() => {
+                coursesPopup.style.opacity = '1';
+                coursesPopup.querySelector('div').style.transform = 'scale(1)';
+            }, 10);
+        };
+
+        const hideCoursesPopup = () => {
+            coursesPopup.style.opacity = '0';
+            coursesPopup.querySelector('div').style.transform = 'scale(0.95)';
+            setTimeout(() => { coursesPopup.classList.add('hidden'); }, 300);
+        };
+
+        coursesButton.addEventListener('click', (e) => { e.preventDefault(); showCoursesPopup(); });
+        closeCoursesPopup.addEventListener('click', hideCoursesPopup);
+        coursesPopup.addEventListener('click', (e) => { 
+            if (e.target === coursesPopup) { 
+                hideCoursesPopup();
+            }
+            if (e.target.classList.contains('course-info-toggle')) {
+                const button = e.target;
+                // Ajustado para encontrar correctamente el contenedor de detalles de los cursos
+                const details = button.closest('.course-item').querySelector('.course-details');
+                details.classList.toggle('open');
+                if (details.classList.contains('open')) {
+                    button.innerHTML = 'MENOS INFO ←';
+                } else {
+                    button.innerHTML = 'MÁS INFO →';
+                }
+            }
+        });
+        
+        // --- Lógica para el Popup de Instalar ---
+        const installButton = document.getElementById('installButton');
+        const installPopup = document.getElementById('installPopup');
+        const closeInstallPopup = document.getElementById('closeInstallPopup');
+        const iosTab = document.getElementById('iosTab');
+        const androidTab = document.getElementById('androidTab');
+        const iosInstructions = document.getElementById('iosInstructions');
+        const androidInstructions = document.getElementById('androidInstructions');
+
+        const showInstallPopup = () => {
+            installPopup.classList.remove('hidden');
+            setTimeout(() => {
+                installPopup.style.opacity = '1';
+                installPopup.querySelector('div').style.transform = 'scale(1)';
+            }, 10);
+        };
+        
+        const hideInstallPopup = () => {
+            installPopup.style.opacity = '0';
+            installPopup.querySelector('div').style.transform = 'scale(0.95)';
+            setTimeout(() => { installPopup.classList.add('hidden'); }, 300);
+        };
+
+        installButton.addEventListener('click', (e) => { e.preventDefault(); showInstallPopup(); });
+        closeInstallPopup.addEventListener('click', hideInstallPopup);
+        installPopup.addEventListener('click', (e) => { if (e.target === installPopup) { hideInstallPopup(); } });
+
+        iosTab.addEventListener('click', () => {
+            iosInstructions.classList.remove('hidden');
+            androidInstructions.classList.add('hidden');
+            iosTab.classList.add('install-tab-active');
+            androidTab.classList.remove('install-tab-active', 'text-gray-400');
+            androidTab.classList.add('text-gray-400');
+        });
+        
+        androidTab.addEventListener('click', () => {
+            androidInstructions.classList.remove('hidden');
+            iosInstructions.classList.add('hidden');
+            androidTab.classList.add('install-tab-active');
+            iosTab.classList.remove('install-tab-active');
+            iosTab.classList.add('text-gray-400');
+        });
+
+        // --- Lógica para vCard (Guardar Contacto) ---
+        const vCardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Juan Zárate\nORG:Juan Zárate Coach\nTITLE:Coach Transpersonal\nTEL;TYPE=WORK,VOICE:+5493586012008\nEMAIL:zaratejr721@gmail.com\nEND:VCARD`;
+        const vCardUrl = `data:text/vcard;charset=utf-8,${encodeURIComponent(vCardData)}`;
+        document.getElementById('saveContactButton').href = vCardUrl;
+
+        // --- Lógica para el Popup de Horario ---
+        const scheduleButton = document.getElementById('scheduleButton');
+        const schedulePopup = document.getElementById('schedulePopup');
+        const closeSchedulePopup = document.getElementById('closeSchedulePopup');
+
+        const showSchedulePopup = () => {
+            schedulePopup.classList.remove('hidden');
+            setTimeout(() => {
+                schedulePopup.style.opacity = '1';
+                schedulePopup.querySelector('div').style.transform = 'scale(1)';
+            }, 10);
+        };
+
+        const hideSchedulePopup = () => {
+            schedulePopup.style.opacity = '0';
+            schedulePopup.querySelector('div').style.transform = 'scale(0.95)';
+            setTimeout(() => { schedulePopup.classList.add('hidden'); }, 300);
+        };
+
+        scheduleButton.addEventListener('click', (e) => { e.preventDefault(); showSchedulePopup(); });
+        closeSchedulePopup.addEventListener('click', hideSchedulePopup);
+        schedulePopup.addEventListener('click', (e) => { if (e.target === schedulePopup) { hideSchedulePopup(); } });
+
+        setupCarousel();
+    </script>
+</body>
+</html>
